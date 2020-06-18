@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+.Large{
+    font-size: 1.4em;
+}
+.Bold{
+    font-weight: bold;
+}
+.mb-neg-5{
+    margin-bottom: -5px !important;
+}
+.p-35{
+    padding: 35px;
+}
+
+.mt-15 {
+    margin-top: 15px !important;
+}
+
+.mt-25 {
+    margin-top: 25px !important;
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mr-25{
+    margin-right: 25px !important;
+}
+
+
+.pt-15 {
+    padding-top: 15px !important;
+}
+.pt-25 {
+    padding-top: 25px!important;
+}
+.pt-50 {
+    padding-top: 50px !important;
+}
+
+.Divider {
+    margin-top: 25px !important;
+    margin-bottom: 35px !important;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.align-right{
+    text-align: right;
+}
