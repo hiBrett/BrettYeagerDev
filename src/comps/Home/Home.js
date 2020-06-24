@@ -13,7 +13,7 @@ export default class Home extends Component {
 
     render() {
         return <div>
-            <Messages text={["Hello, welcome to my portfolio! [Skip-2]😁 "]}></Messages>
+            <Messages elevation={0} text={["Hello, welcome to my portfolio! [Skip-2]😁 "]}></Messages>
             <PortfolioItems>
                 <PortfolioItem title="Online Team-Building Prototype" subheader="With many people working from home, one team-building company wanted to find out . . ." imageText="Can online team-building exercises be beneficial?" image="/UWProjectImage.jpg" link1="http://www.brettyeagerdev.com/uw-proposal-project/index.html?group=1" link1text="Try the demo" link2="https://github.com/hiBrett/UWProposalProject" link2text="Source code" >
 

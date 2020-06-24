@@ -84,10 +84,10 @@ export default function PortfolioItem(props) {
                     (props.link1 != null || props.link2 != null) && < List component="nav">
                         <ListItem><ListItemText>
                             {
-                                props.link1 != null && <Button variant="contained" color="primary" target='_blank' href={props.link1} aria-label={props.link1text} className="mr-25">{props.link1text}</Button>
+                                props.link1 != null && <Button variant="contained" color="primary" target='_blank' href={props.link1} aria-label={props.link1text} className="mr-25 mb-7 mt-7">{props.link1text}</Button>
                             }
                             {
-                                props.link2 != null && <Button variant="contained" color="primary" target='_blank' href={props.link2} aria-label={props.link2text}>{props.link2text}</Button>
+                                props.link2 != null && <Button variant="contained" color="primary" target='_blank' href={props.link2} aria-label={props.link2text} className="mb-7 mt-7">{props.link2text}</Button>
                             }
                         </ListItemText></ListItem>
                     </List>
