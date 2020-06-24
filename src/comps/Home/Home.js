@@ -9,10 +9,6 @@ import ContactMe from '../ContactMe/ContactMe';
 export default class Home extends Component {
     constructor(props) {
         super(props);
-
-
-        this.state = {};
-        this.state.connected = false;
     }
 
     render() {
