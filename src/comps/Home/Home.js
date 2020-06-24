@@ -32,7 +32,7 @@ export default class Home extends Component {
 
     render() {
         return <div>
-            <Messages text={["Hello [Pause] [Skip-3]😁 [Pause] [Pause]", "Welcome to my portfolio!"]}></Messages>
+            <Messages text={["Hello, welcome to my portfolio! [Skip-2]😁 "]}></Messages>
             <PortfolioItems>
                 <PortfolioItem title="Online Team-Building Prototype" subheader="With many people working from home, one team-building company wanted to find out . . ." imageText="Can online team-building exercises be beneficial?" image="/UWProjectImage.jpg" link1="http://www.brettyeagerdev.com/uw-proposal-project/index.html?group=1" link1text="Try the demo" link2="https://github.com/hiBrett/UWProposalProject" link2text="Source code" >
 
@@ -82,7 +82,7 @@ export default class Home extends Component {
 
                 </PortfolioItem>
 
-                <PortfolioItem title="Sarah Smith Wa-09 Congressional Campaign" subheader="A political campaign with a slow loading website . . ." imageText="And how I fixed it." image="/SarahSmith.png" link1="https://314brett.wixsite.com/website-6" link1text="Before" link2="http://sarah-smith-website-resume-brett-yeager.s3-website-us-west-2.amazonaws.com/" link2text="After">
+                <PortfolioItem title="Sarah Smith Wa-09 Congressional Campaign" subheader="A political campaign with a slow and messy website . . ." imageText="And how I fixed it." image="/SarahSmith.png" link1="https://314brett.wixsite.com/website-6" link1text="Before" link2="http://sarah-smith-website-resume-brett-yeager.s3-website-us-west-2.amazonaws.com/" link2text="After">
 
                     <List component="nav">
                         <ListItem><ListItemText><Typography variant="h4">A fast paced political campaign with a fast new website.</Typography></ListItemText></ListItem>
@@ -109,7 +109,7 @@ export default class Home extends Component {
                     <Divider className="Divider" />
                     <List component="nav">
                         <ListItem><ListItemText><Typography paragraph className="mb-neg-5"><span className="Bold">Solution:</span></Typography></ListItemText></ListItem>
-                        <ListItem><ListItemText>Built a static website with Broccoli.js and served it cached through an npm for optimal speed.</ListItemText></ListItem>
+                        <ListItem><ListItemText>Static website built with Broccoli.js and served cached through an npm for optimal speed.</ListItemText></ListItem>
                         <ListItem><ListItemText>Used AWS Lambda functions on the backend for any dynamic interactions like upcoming campaign events.</ListItemText></ListItem>
                     </List>
 
@@ -134,7 +134,7 @@ export default class Home extends Component {
 
                 </PortfolioItem>
 
-                <PortfolioItem title="BrettYeagerDev.com" subheader="See this website's source code." link1="https://github.com/hiBrett/BrettYeagerDev" link1text="ReactJS Source Code" noContent>
+                <PortfolioItem title="BrettYeagerDev.com" subheader="See this website's source code. Built with ReactJS." link1="https://github.com/hiBrett/BrettYeagerDev" link1text="Source Code" noContent>
                 </PortfolioItem>
 
                 <ContactMe />
