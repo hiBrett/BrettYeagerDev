@@ -4,6 +4,7 @@ import Messages from '../Messages/Messages';
 import { makeStyles } from '@material-ui/core/styles';
 import PortfolioItems from '../PortfolioItems/PortfolioItems';
 import PortfolioItem from '../PortfolioItems/PortfolioItem';
+import ContactMe from '../ContactMe/ContactMe';
 
 export default class Home extends Component {
     constructor(props) {
@@ -31,9 +32,9 @@ export default class Home extends Component {
 
     render() {
         return <div>
-            <Messages text={["Hello [Pause] [Skip-3]😁 [Pause] Thanks for stopping by.", "Welcome to my portfolio!"]}></Messages>
+            <Messages text={["Hello [Pause] [Skip-3]😁 [Pause] [Pause]", "Welcome to my portfolio!"]}></Messages>
             <PortfolioItems>
-                <PortfolioItem title="Online Team-Building Prototype" subheader="With many people working from home, one team-building company wanted to find out . . ." imageText="Can online team-building exercises be beneficial?" image="/UWProjectImage.jpg" link1="http://www.brettyeagerdev.com/uw-proposal-project/index.html?group=1" link1text="Try the demo" link2="/" link2text="Source code" >
+                <PortfolioItem title="Online Team-Building Prototype" subheader="With many people working from home, one team-building company wanted to find out . . ." imageText="Can online team-building exercises be beneficial?" image="/UWProjectImage.jpg" link1="http://www.brettyeagerdev.com/uw-proposal-project/index.html?group=1" link1text="Try the demo" link2="https://github.com/hiBrett/UWProposalProject" link2text="Source code" >
 
                     <List component="nav">
                         <ListItem><ListItemText><Typography variant="h4">With many people working from home, WhenPeoplePlay.com wanted to prototype online team-building exercises.</Typography></ListItemText></ListItem>
@@ -45,7 +46,7 @@ export default class Home extends Component {
                         <ListItem><ListItemText><Typography paragraph className="mb-neg-5"><span className="Bold">Impact:</span></Typography></ListItemText></ListItem>
                         <ListItem><ListItemText>The client was very happy.</ListItemText></ListItem>
                         <ListItem><ListItemText>The client presented the prototype to the company successfully.</ListItemText></ListItem>
-                        <ListItem><ListItemText>The client accepted my work two weeks before the deadline.</ListItemText></ListItem>
+                        <ListItem><ListItemText>I learned ReactJS while working on this project.</ListItemText></ListItem>
                         <ListItem><ListItemText><Messages small fast quote quoteAuthor="Barry Thompson" text={["Brett saw different and more efficient ways to make the project better. [Pause] Left suggestions for improvements. [Pause] Was friendly and very professional. [Pause] Left some creativity in his hands and he excelled more than I imagined. [Pause] Would highly recommend him."]}></Messages></ListItemText></ListItem>
                     </List>
 
@@ -68,8 +69,15 @@ export default class Home extends Component {
                     <List component="nav">
                         <ListItem><ListItemText><Typography paragraph className="mb-neg-5"><span className="Bold">Solution Details:</span></Typography></ListItemText></ListItem>
                         <ListItem><ListItemText>Game state lives on the sever and is sent to the players.</ListItemText></ListItem>
-                        <ListItem><ListItemText>Server code is designed for any number of groups.</ListItemText></ListItem>
-                        <ListItem><ListItemText>Simple and understandable code like UpdatedGameState() that can be used by both games.</ListItemText></ListItem>
+                        <ListItem><ListItemText>Requests to change the game state are sent to the server.</ListItemText></ListItem>
+                        <ListItem><ListItemText>The server then acts according to the rules of the game.</ListItemText></ListItem>
+                    </List>
+
+                    <Divider className="Divider" />
+                    <List component="nav" className="mt-15">
+                        <ListItem><ListItemText><Typography paragraph className="mb-neg-5"><span className="Bold">Delivery:</span></Typography></ListItemText></ListItem>
+                        <ListItem><ListItemText>The client accepted my work two weeks before the deadline.</ListItemText></ListItem>
+                        <ListItem><ListItemText>I helped the client get the website running in AWS.</ListItemText></ListItem>
                     </List>
 
                 </PortfolioItem>
@@ -85,9 +93,9 @@ export default class Home extends Component {
                     <List component="nav" className="mt-15">
                         <ListItem><ListItemText><Typography paragraph className="mb-neg-5"><span className="Bold">Impact:</span></Typography></ListItemText></ListItem>
                         <ListItem><ListItemText>The candidate was better able to communicate her message.</ListItemText></ListItem>
-                        <ListItem><ListItemText>First search result on Google for "Sarah Smith" when the old website wasn't (this was during 2018)</ListItemText></ListItem>
+                        <ListItem><ListItemText>First search result on Google for "Sarah Smith" when the old website wasn't.</ListItemText></ListItem>
                         <ListItem><ListItemText>36,000 visitors with an average session duration of 1:16.</ListItemText></ListItem>
-                        <ListItem><ListItemText>Achieve a significantly faster average load time of 3 seconds.</ListItemText></ListItem>
+                        <ListItem><ListItemText>Achieved a significantly faster average load time of 3 seconds.</ListItemText></ListItem>
                     </List>
 
                     <Divider className="Divider" />
@@ -119,20 +127,17 @@ export default class Home extends Component {
                         <ListItem><ListItemText><Typography paragraph className="mb-neg-5"><span className="Bold">Impact:</span></Typography></ListItemText></ListItem>
                         <ListItem><ListItemText>80,000 players.</ListItemText></ListItem>
                         <ListItem><ListItemText>4.6 stars.</ListItemText></ListItem>
-                        <ListItem><ListItemText>Reading all of the positive reviews made my career choice easy.</ListItemText></ListItem>
-                        <ListItem><ListItemText><Messages small fast quote quoteAuthor="Walter Bonetti" text={["It's a new and very interesting way to train the brain with numbers and operations. [Pause] The bond system inspired by chemistry makes everything very enjoyable."]}></Messages></ListItemText></ListItem>
+                        <ListItem><ListItemText>Reading all of the positive reviews made me feel the impact software development can have. This lead me to pursuing software development as a career.</ListItemText></ListItem>
+                        <ListItem><ListItemText><Messages small fast quote quoteAuthor="Walter Bonetti User Review" text={["It's a new and very interesting way to train the brain with numbers and operations. [Pause] The bond system inspired by chemistry makes everything very enjoyable."]}></Messages></ListItemText></ListItem>
                     </List>
                     
 
                 </PortfolioItem>
 
-                <PortfolioItem title="BrettYeagerDev.com" subheader="Last But Not Least . . ." imageText="This very website!" image="/Website.png" link1="https://play.google.com/store/apps/details?id=hi.brett.monodot" link1text="Source Code" noContent>
-
-
-
-
+                <PortfolioItem title="BrettYeagerDev.com" subheader="See this website's source code." link1="https://github.com/hiBrett/BrettYeagerDev" link1text="ReactJS Source Code" noContent>
                 </PortfolioItem>
 
+                <ContactMe />
 
             </PortfolioItems>
         </div>

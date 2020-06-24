@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
-.Large{
+
+.Large {
     font-size: 1.4em;
 }
-.Bold{
+
+.Bold {
     font-weight: bold;
 }
-.mb-neg-5{
+
+.mb-neg-5 {
     margin-bottom: -5px !important;
 }
-.p-35{
+
+.p-35 {
     padding: 35px;
 }
 
@@ -24,17 +28,25 @@
     margin-top: 50px !important;
 }
 
-.mr-25{
+.mr-25 {
     margin-right: 25px !important;
 }
 
+.linkedInIconFab {
+    background-color: #0e76a8 !important;
+}
+.linkedInIcon {
+    color: white !important;
+}
 
 .pt-15 {
     padding-top: 15px !important;
 }
+
 .pt-25 {
-    padding-top: 25px!important;
+    padding-top: 25px !important;
 }
+
 .pt-50 {
     padding-top: 50px !important;
 }
@@ -44,10 +56,14 @@
     margin-bottom: 35px !important;
 }
 
-.italic{
+.italic {
     font-style: italic;
 }
 
-.align-right{
+.align-right {
     text-align: right;
+}
+
+.align-center{
+    text-align: center;
 }
