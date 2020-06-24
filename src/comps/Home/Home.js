@@ -15,21 +15,6 @@ export default class Home extends Component {
         this.state.connected = false;
     }
 
-
-    componentDidMount() {
-
-        function httpGetAsync(theUrl, callback) {
-            var xmlHttp = new XMLHttpRequest();
-            xmlHttp.onreadystatechange = function () {
-                if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-                    callback(xmlHttp.responseText);
-            }
-            xmlHttp.open("GET", theUrl, true);
-            xmlHttp.send(null);
-        }
-
-    }
-
     render() {
         return <div>
             <Messages text={["Hello, welcome to my portfolio! [Skip-2]😁 "]}></Messages>
