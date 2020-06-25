@@ -16,7 +16,7 @@ export default class Home extends Component {
     render() {
         return <div>
             <div className="vh-100">
-                <Messages vh50 elevation={0} text={["Hello[Pause],[Pause] welcome to my portfolio![Pause] [Skip-2]😁 "]}></Messages>
+                <Messages vh50 elevation={0} text={["Hello[Pause], welcome to my portfolio![Pause] [Skip-2]😁 "]}></Messages>
                 {<Fade fadein delay={5500}><KeyboardArrowDownIcon className="Larger color-gray mt-25"></KeyboardArrowDownIcon></Fade>}
             </div>
             <PortfolioItems>
