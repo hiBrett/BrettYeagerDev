@@ -15,8 +15,10 @@ export default class Home extends Component {
 
     render() {
         return <div>
-            <Messages vh50 elevation={0} text={["Hello, welcome to my portfolio! [Skip-2]😁 "]}></Messages>
-            {<Fade fadein delay={3000}><KeyboardArrowDownIcon className="Larger color-gray mb-50"></KeyboardArrowDownIcon></Fade>}
+            <div className="vh-100">
+                <Messages vh50 elevation={0} text={["Hello, welcome to my portfolio! [Skip-2]😁 "]}></Messages>
+                {<Fade fadein delay={3000}><KeyboardArrowDownIcon className="Larger color-gray mb-50"></KeyboardArrowDownIcon></Fade>}
+            </div>
             <PortfolioItems>
                 <PortfolioItem title="Online Team-Building Prototype" subheader="With many people working from home, one team-building company wanted to find out . . ." imageText="Can online team-building exercises be beneficial?" image="/UWProjectImage.jpg" link1="http://www.brettyeagerdev.com/uw-proposal-project/index.html?group=1" link1text="Try the demo" link2="https://github.com/hiBrett/UWProposalProject" link2text="Source code" >
 
@@ -114,7 +116,7 @@ export default class Home extends Component {
                         <ListItem><ListItemText>Reading all of the positive reviews made me feel the impact software development can have. This lead me to pursuing software development as a career.</ListItemText></ListItem>
                         <ListItem><ListItemText><Messages small fast quote quoteAuthor="Walter Bonetti User Review" text={["It's a new and very interesting way to train the brain with numbers and operations. [Pause] The bond system inspired by chemistry makes everything very enjoyable."]}></Messages></ListItemText></ListItem>
                     </List>
-                    
+
 
                 </PortfolioItem>
 
