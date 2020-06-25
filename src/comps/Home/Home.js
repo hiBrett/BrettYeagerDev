@@ -96,7 +96,7 @@ export default class Home extends Component {
                     <List component="nav">
                         <ListItem><ListItemText><Typography paragraph className="mb-neg-5"><span className="Bold">Solution:</span></Typography></ListItemText></ListItem>
                         <ListItem><ListItemText>Static website built with Broccoli.js and served cached through an npm for optimal speed.</ListItemText></ListItem>
-                        <ListItem><ListItemText>Used AWS Lambda functions on the backend for any dynamic interactions like upcoming campaign events.</ListItemText></ListItem>
+                        <ListItem><ListItemText>Used AWS Lambda functions on the backend for any dynamic content like viewing upcoming campaign events.</ListItemText></ListItem>
                     </List>
 
                 </PortfolioItem>
