@@ -19,7 +19,11 @@
 }
 
 .Large {
-    font-size: 1.4em;
+    font-size: 1.4em !important;
+}
+
+.Larger {
+    font-size: 2.8em !important;
 }
 
 .Bold {
@@ -38,6 +42,10 @@
     margin-bottom: 15px !important;
 }
 
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
 .p-35 {
     padding: 35px;
 }
@@ -48,6 +56,17 @@
 
 .mt-15 {
     margin-top: 15px !important;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.flex-centered {
+    display: flex;
 }
 
 .mt-25 {
@@ -71,6 +90,10 @@
 
 .p-0{
     padding: 0 !important;
+}
+
+.pt-0{
+    padding-top: 0 !important;
 }
 
 .pt-15 {
@@ -100,6 +123,52 @@
 
 .align-center{
     text-align: center;
+}
+
+.color-gray{
+    color: gray;
+}
+
+.beforeFadeIn{
+    opacity: 0;
+}
+.beforeFadeOut{
+    opacity: 1;
+}
+.fade-in {
+    animation: fadeIn ease 0.5s;
+    animation-fill-mode: forwards;
+}
+.fade-out {
+    animation: fadeOut ease 0.5s;
+    animation-fill-mode: forwards;
+}
+.vh-80{
+    height: 80vh;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @media only screen and (min-width: 600px) {

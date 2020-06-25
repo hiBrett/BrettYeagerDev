@@ -5,6 +5,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import PortfolioItems from '../PortfolioItems/PortfolioItems';
 import PortfolioItem from '../PortfolioItems/PortfolioItem';
 import ContactMe from '../ContactMe/ContactMe';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import Fade from '../Fade/Fade';
 
 export default class Home extends Component {
     constructor(props) {
@@ -13,7 +15,8 @@ export default class Home extends Component {
 
     render() {
         return <div>
-            <Messages elevation={0} text={["Hello, welcome to my portfolio! [Skip-2]😁 "]}></Messages>
+            <Messages vh50 elevation={0} text={["Hello, welcome to my portfolio! [Skip-2]😁 "]}></Messages>
+            {<Fade fadein delay={3000}><KeyboardArrowDownIcon className="Larger color-gray mb-50"></KeyboardArrowDownIcon></Fade>}
             <PortfolioItems>
                 <PortfolioItem title="Online Team-Building Prototype" subheader="With many people working from home, one team-building company wanted to find out . . ." imageText="Can online team-building exercises be beneficial?" image="/UWProjectImage.jpg" link1="http://www.brettyeagerdev.com/uw-proposal-project/index.html?group=1" link1text="Try the demo" link2="https://github.com/hiBrett/UWProposalProject" link2text="Source code" >
 

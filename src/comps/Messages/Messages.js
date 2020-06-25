@@ -152,6 +152,10 @@ export default class Home extends Component {
             fontSize = "3em";
         }
 
+        if (this.props.vh50) {
+            height = "50vh";
+        }
+
         let elevation = 2;
 
         if (this.props.elevation != null) {
@@ -159,7 +163,7 @@ export default class Home extends Component {
         }
 
 
-        return <Container className="mt-50 align-center mobile"><Paper elevation={elevation} className="p-35"><Typography style={{ height, fontSize, paddingTop: "100px" }} variant="h2" Component="h2" ref={(this.Typography)}>
+        return <Container className={"align-center flex-centered"}><Paper elevation={elevation} className="p-35 flex"><Typography style={{ height, fontSize, paddingTop: "100px" }} variant="h2" Component="h2" ref={(this.Typography)}>
             <span className={textClassName}>{text}</span>
             <Typography className="">{(this.props.quote && finished) ? " - " + this.props.quoteAuthor:""}</Typography>
         </Typography></Paper></Container>
