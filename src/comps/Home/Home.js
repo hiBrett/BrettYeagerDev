@@ -17,7 +17,7 @@ export default class Home extends Component {
         return <div>
             <div className="vh-100">
                 <Messages vh50 elevation={0} text={["Hello, welcome to my portfolio! [Skip-2]😁 "]}></Messages>
-                {<Fade fadein delay={3000}><KeyboardArrowDownIcon className="Larger color-gray mb-50"></KeyboardArrowDownIcon></Fade>}
+                {<Fade fadein delay={3000}><KeyboardArrowDownIcon className="Larger color-gray mt-25"></KeyboardArrowDownIcon></Fade>}
             </div>
             <PortfolioItems>
                 <PortfolioItem title="Online Team-Building Prototype" subheader="With many people working from home, one team-building company wanted to find out . . ." imageText="Can online team-building exercises be beneficial?" image="/UWProjectImage.jpg" link1="http://www.brettyeagerdev.com/uw-proposal-project/index.html?group=1" link1text="Try the demo" link2="https://github.com/hiBrett/UWProposalProject" link2text="Source code" >
