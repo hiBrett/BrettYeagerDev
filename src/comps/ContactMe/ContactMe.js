@@ -80,7 +80,7 @@ export default function PortfolioItem(props) {
             }
             <CardContent>
                 <Typography paragraph component="p">
-                    <Messages elevation={0} medium text={["Thanks for stopping by. [Pause] [Skip-2]😁 "]}></Messages>
+                    <Messages elevation={0} medium text={["Thanks for stopping by.  [Pause] [Skip-2]😁  "]}></Messages>
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
