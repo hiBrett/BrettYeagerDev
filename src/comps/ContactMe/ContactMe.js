@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import { Card, Grid, Container, Tooltip, Fab } from '@material-ui/core';
@@ -80,7 +80,7 @@ export default function PortfolioItem(props) {
             }
             <CardContent>
                 <Typography paragraph component="p">
-                    <Messages elevation={0} medium text={["Thanks for stopping by. [Pause] Feel free to reach out, let's chat! [Pause] [Pause] [Pause] [Pause] [Pause] [Pause] [Pause]", "Have a great day!  [Skip-2]😁 "]}></Messages>
+                    <Messages elevation={0} medium text={["Thanks for stopping by. [Pause] [Skip-2]😁 "]}></Messages>
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
