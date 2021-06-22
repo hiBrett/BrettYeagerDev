@@ -1,4 +1,4 @@
-﻿import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { ButtonGroup, Button, Typography, List, ListItem, ListItemText, Divider } from '@material-ui/core';
 import Messages from '../Messages/Messages';
 import { makeStyles } from '@material-ui/core/styles';
@@ -15,8 +15,8 @@ export default class Home extends Component {
 
     render() {
         return <div>
-            <div className="vh-100">
-                <Messages vh50 elevation={0} text={["Hello[Pause], welcome to my portfolio![Pause] [Skip-2]😁 "]}></Messages>
+            <div className="vh-50">
+                <Messages vh50 elevation={0} text={["Welcome to my portfolio!"]}></Messages>
                 {<Fade fadein delay={5500}><KeyboardArrowDownIcon className="Larger color-gray mt-25"></KeyboardArrowDownIcon></Fade>}
             </div>
             <PortfolioItems>
