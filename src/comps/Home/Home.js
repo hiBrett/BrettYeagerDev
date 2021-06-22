@@ -20,7 +20,7 @@ export default class Home extends Component {
                 {<Fade fadein delay={5500}><KeyboardArrowDownIcon className="Larger color-gray mt-25"></KeyboardArrowDownIcon></Fade>}
             </div>
             <PortfolioItems>
-                <PortfolioItem title="Online Team-Building Prototype" subheader="With many people working from home, one team-building company wanted to find out . . ." imageText="Can online team-building exercises be beneficial?" image="/UWProjectImage.jpg" link1="http://www.brettyeagerdev.com/uw-proposal-project/index.html?group=1" link1text="Try the demo" link2="https://github.com/hiBrett/UWProposalProject" link2text="Source code" >
+                <PortfolioItem title="Online Team-Building Prototype" subheader="With many people working from home, one team-building company wanted to find out . . ." imageText="Can online team-building exercises be beneficial?" image="/UWProjectImage.jpg" link1="https://github.com/hiBrett/UWProposalProject" link1text="Source code" >
 
                     <List component="nav">
                         <ListItem><ListItemText><Typography variant="h4">With many people working from home, WhenPeoplePlay.com wanted to prototype online team-building exercises.</Typography></ListItemText></ListItem>
