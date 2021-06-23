@@ -57,7 +57,11 @@ export default function PortfolioItem(props) {
 
     var cardStyle = {
         marginTop: "15px",
-        marginBottom: "15px",
+        marginBottom: "15px"
+    }
+
+    if(!props.shadow){
+        cardStyle.boxShadow = "none";
     }
 
     return (
@@ -80,7 +84,7 @@ export default function PortfolioItem(props) {
             }
             <CardContent>
                 <Typography paragraph component="p">
-                    <Messages elevation={0} medium text={["Thanks for stopping by.  [Pause] [Skip-2]😁  "]}></Messages>
+                    <Messages elevation={0} medium text={[props.text]}></Messages>
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
