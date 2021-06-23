@@ -20,7 +20,7 @@ export default class Home extends Component {
             </div>
 
             <PortfolioItems>
-                <PortfolioItem title="Online Team-Building Prototype" subheader="With many people working from home, one team-building company wanted to find out . . ." imageText=". . . Can online team-building exercises be beneficial?" image="/UWProjectImage.jpg" link1="https://github.com/hiBrett/UWProposalProject" link1text="Source code" >
+                <PortfolioItem title="Online Team-Building Prototype" subheader="With many people working from home, one team-building company wanted to find out . . ." imageText="Can online team-building exercises be beneficial?" image="/UWProjectImage.jpg" link1="https://github.com/hiBrett/UWProposalProject" link1text="Source code" >
 
                     <List component="nav">
                         <ListItem><ListItemText><Typography variant="h4">With many people working from home, WhenPeoplePlay.com wanted to prototype online team-building exercises.</Typography></ListItemText></ListItem>
@@ -68,7 +68,7 @@ export default class Home extends Component {
 
                 </PortfolioItem>
 
-                <PortfolioItem title="Sarah Smith Wa-09 Congressional Campaign" subheader="A political campaign with a slow and messy website . . ." imageText=". . . And how I fixed it." image="/SarahSmith.png" link1="https://314brett.wixsite.com/website-6" link1text="Before" link2="http://sarah-smith-website-resume-brett-yeager.s3-website-us-west-2.amazonaws.com/" link2text="After">
+                <PortfolioItem title="Sarah Smith Wa-09 Congressional Campaign" subheader="A political campaign with a slow and messy website . . ." imageText="And how I fixed it." image="/SarahSmith.png" link1="https://314brett.wixsite.com/website-6" link1text="Before" link2="http://sarah-smith-website-resume-brett-yeager.s3-website-us-west-2.amazonaws.com/" link2text="After">
 
                     <List component="nav">
                         <ListItem><ListItemText><Typography variant="h4">A fast paced political campaign with a fast new website.</Typography></ListItemText></ListItem>
@@ -101,7 +101,7 @@ export default class Home extends Component {
 
                 </PortfolioItem>
 
-                <PortfolioItem title="Monodot" subheader="A game with an overwhelming response . . ." imageText=". . . That pushed me into Software Development." image="/Monodot.png" link1="https://play.google.com/store/apps/details?id=hi.brett.monodot" link1text="Google Play">
+                <PortfolioItem title="Monodot" subheader="A game with an overwhelming response . . ." imageText="That pushed me into Software Development." image="/Monodot.png" link1="https://play.google.com/store/apps/details?id=hi.brett.monodot" link1text="Google Play">
 
                     <List component="nav">
                         <ListItem><ListItemText><Typography variant="h4">Undecided between Chemical Engineering and Software Development, the overwhelming response from users pushed me into Software Development.</Typography></ListItemText></ListItem>
