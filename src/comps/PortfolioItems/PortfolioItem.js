@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PortfolioItem(props) {
     const classes = useStyles();
-    const [expanded, setExpanded] = React.useState(false);
+    const [expanded, setExpanded] = React.useState(true);
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
@@ -91,19 +91,6 @@ export default function PortfolioItem(props) {
                             }
                         </ListItemText></ListItem>
                     </List>
-                }
-
-                {
-                    !props.noContent && <IconButton
-                    className={clsx(classes.expand, {
-                        [classes.expandOpen]: expanded,
-                    })}
-                    onClick={handleExpandClick}
-                    aria-expanded={expanded}
-                    aria-label="show more"
-                    >
-                    <Fab color="secondary" className={classes.absolute}><ExpandMoreIcon /></Fab>
-                    </IconButton>
                 }
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>

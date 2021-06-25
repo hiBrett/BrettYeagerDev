@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import { Card, Grid, Container, Tooltip, Fab } from '@material-ui/core';
@@ -65,7 +65,7 @@ export default function PortfolioItem(props) {
     }
 
     return (
-        <Container style={{ marginTop: "100px", textAlign: "left" }}><Grid item xs={12}><Card width={1} style={cardStyle} className={classes.root}>
+        <Container style={{ marginTop: "50px", textAlign: "left" }}><Grid item xs={12}><Card width={1} style={cardStyle} className={classes.root}>
             <CardHeader
 
                 avatar={
@@ -111,11 +111,6 @@ export default function PortfolioItem(props) {
                 <CardContent>
                     {props.children}
                 </CardContent>
-
-
-
-
-
 
 
 

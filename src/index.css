@@ -146,9 +146,44 @@
 .vh-80{
     height: 80vh;
 }
+.vh-30{
+    height: 30vh;
+}
 
 .bg-red{
     background-color: red;
+}
+
+.quote{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.HeaderPadding{
+    padding: 15vh 0 18vh 0;
+    background-color: #DEDEDE;
+}
+.Header{
+    display: flex;
+    width: 100%;
+    height: 9em;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.HeaderImage{
+    height: 60%;
+    border-radius: 50%;
+}
+.HeaderTextHolder{
+    margin-left: 30px;
+    width: 13em;
+    text-align: left;
+    font-size: 2em;
+    height: 2.4em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: lighter;
 }
 
 @keyframes fadeIn {

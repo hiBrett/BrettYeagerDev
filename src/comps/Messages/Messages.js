@@ -143,17 +143,21 @@ export default class Home extends Component {
             fontSize = "1.3em";
         }
 
+        if(this.props.SmallHeaderFont){
+            fontSize = "2.4em"
+        }
+
         if (this.props.quote) {
             textClassName = "italic";
         }
 
-        if (this.props.medium) {
-            height = "200px";
-            fontSize = "3em";
+
+        if (this.props.em2) {
+            fontSize = "2em";
         }
 
-        if (this.props.vh50) {
-            height = "50vh";
+        if (this.props.medium) {
+            fontSize = "3em";
         }
 
         let elevation = 2;
@@ -162,10 +166,9 @@ export default class Home extends Component {
             elevation = this.props.elevation;
         }
 
-
-        return <Container className={"align-center flex-centered"}><Paper elevation={elevation} className="p-35 flex"><Typography style={{ height, fontSize, paddingTop: "100px" }} variant="h2" Component="h2" ref={(this.Typography)}>
-            <span className={textClassName}>{text}</span>
-            <Typography className="">{(this.props.quote && finished) ? " - " + this.props.quoteAuthor:""}</Typography>
+        return <Container className={"align-center flex-centered "}><Paper elevation={elevation} className="flex"><Typography className={"" + (this.props.quote ? " quote":"")} style={{fontSize}} variant="h2" Component="h2" ref={(this.Typography)}>
+            <span style={{whiteSpace: "break-spaces"}} className={textClassName}>{text}</span>
+            <Typography>{(this.props.quote && finished) ? " - " + this.props.quoteAuthor:""}</Typography>
         </Typography></Paper></Container>
     }
 }

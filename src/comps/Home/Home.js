@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+﻿import React, { Component } from 'react';
 import { ButtonGroup, Button, Typography, List, ListItem, ListItemText, Divider } from '@material-ui/core';
 import Messages from '../Messages/Messages';
 import { makeStyles } from '@material-ui/core/styles';
@@ -7,6 +7,8 @@ import PortfolioItem from '../PortfolioItems/PortfolioItem';
 import ContactMe from '../ContactMe/ContactMe';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import Fade from '../Fade/Fade';
+import MessagesSimple from "../Messages/MessagesSimple";
+import Header from "../Header/Header";
 
 export default class Home extends Component {
     constructor(props) {
@@ -15,9 +17,7 @@ export default class Home extends Component {
 
     render() {
         return <div>
-            <div className="vh-50">
-                <Messages vh50 elevation={0} text={["My name is Brett Yeager.  ", "Welcome to my portfolio!"]}></Messages>
-            </div>
+            <Header/>
 
             <PortfolioItems>
                 <PortfolioItem title="Online Team-Building Prototype" subheader="With many people working from home, one team-building company wanted to find out . . ." imageText="Can online team-building exercises be beneficial?" image="/UWProjectImage.jpg" link1="https://github.com/hiBrett/UWProposalProject" link1text="Source code" >
@@ -82,7 +82,7 @@ export default class Home extends Component {
                         <ListItem><ListItemText>First search result on Google for "Sarah Smith" when the old website wasn't.</ListItemText></ListItem>
                         <ListItem><ListItemText>36,000 visitors with an average session duration of 1:16.</ListItemText></ListItem>
                         <ListItem><ListItemText>Achieved a significantly faster average load time of 3 seconds.</ListItemText></ListItem>
-                    </List>
+                    </List>I made sure that the connection was over https so that it went to the correct server. That's about all I did. That doesn't mean I didn't check the security of the user information.
 
                     <Divider className="Divider" />
                     <List component="nav">
@@ -113,7 +113,7 @@ export default class Home extends Component {
                         <ListItem><ListItemText><Typography paragraph className="mb-neg-5"><span className="Bold">Impact:</span></Typography></ListItemText></ListItem>
                         <ListItem><ListItemText>80,000 players.</ListItemText></ListItem>
                         <ListItem><ListItemText>4.6 stars.</ListItemText></ListItem>
-                        <ListItem><ListItemText>Reading all of the positive reviews made me feel the impact software development can have. This lead me to pursuing software development as a career.</ListItemText></ListItem>
+                        <ListItem><ListItemText>Reading all of the positive reviews made me feel the impact software development has. This lead me to pursue software development as a career.</ListItemText></ListItem>
                         <ListItem><ListItemText><Messages small fast quote quoteAuthor="Walter Bonetti User Review" text={["It's a new and very interesting way to train the brain with numbers and operations. [Pause] The bond system inspired by chemistry makes everything very enjoyable."]}></Messages></ListItemText></ListItem>
                     </List>
 
