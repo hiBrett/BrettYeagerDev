@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+.MuiGrid-spacing-xs-5 {
+    width: calc(100%) !important;
+    align-items: center !important;
+    margin: 0!important;
+}
+
+.MuiContainer-root {
+    font-size: 0.6em !important;
+}
+
+.MuiTypography-h4 {
+    font-size: 1.5rem !important;
+}
+
+.MuiTypography-body1 {
+    font-size: 0.8rem !important;
+}
+
+.Large {
+    font-size: 1.4em !important;
+}
+
+.Larger {
+    font-size: 2.8em !important;
+}
+
+.Bold {
+    font-weight: bold;
+}
+
+.mb-neg-5 {
+    margin-bottom: -5px !important;
+}
+
+.mb-7 {
+    margin-bottom: 7px !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
+.p-35 {
+    padding: 35px;
+}
+
+.mt-7 {
+    margin-top: 7px !important;
+}
+
+.mt-15 {
+    margin-top: 15px !important;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.flex-centered {
+    display: flex;
+}
+
+.mt-25 {
+    margin-top: 25px !important;
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mr-25 {
+    margin-right: 25px !important;
+}
+
+.linkedInIconFab {
+    background-color: #0e76a8 !important;
+}
+.linkedInIcon {
+    color: white !important;
+}
+
+.p-0{
+    padding: 0 !important;
+}
+
+.pt-0{
+    padding-top: 0 !important;
+}
+
+.pt-15 {
+    padding-top: 15px !important;
+}
+
+.pt-25 {
+    padding-top: 25px !important;
+}
+
+.pt-50 {
+    padding-top: 50px !important;
+}
+
+.Divider {
+    margin-top: 25px !important;
+    margin-bottom: 35px !important;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.color-gray{
+    color: gray;
+}
+
+.beforeFadeIn{
+    opacity: 0;
+}
+.beforeFadeOut{
+    opacity: 1;
+}
+.fade-in {
+    animation: fadeIn ease 0.5s;
+    animation-fill-mode: forwards;
+}
+.fade-out {
+    animation: fadeOut ease 0.5s;
+    animation-fill-mode: forwards;
+}
+.vh-80{
+    height: 80vh;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .MuiContainer-root {
+        font-size: 1em !important;
+    }
+    .MuiTypography-h4 {
+        font-size: 2.125rem !important;
+    }
+
+    .MuiTypography-body1 {
+        font-size: 1rem !important;
+    }
+}
