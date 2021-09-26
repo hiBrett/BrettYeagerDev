@@ -1,125 +1,99 @@
-﻿import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import clsx from 'clsx';
-import { Card, Grid, Container, Tooltip, Fab } from '@material-ui/core';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import LinkIcon from '@material-ui/icons/Link';
+import React, { Component } from 'react';
+import {Button, Paper, Typography} from "@material-ui/core";
+import AnimatedText from "../AnimatedText/AnimatedText";
 
-import { Button, ButtonGroup, List, ListItem, ListItemText } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        maxWidth: '100%'
-    },
-    media: {
-        height: 0,
-        paddingTop: '37.5%'
-    },
-    expand: {
-        transform: 'rotate(0deg)',
-        marginLeft: 'auto',
-        transition: theme.transitions.create('transform', {
-            duration: theme.transitions.duration.shortest,
-        }),
-    },
-    expandOpen: {
-        transform: 'rotate(180deg)',
-    },
-    avatar: {
-        backgroundColor: red[500],
-    },
-}));
-
-export default function PortfolioItem(props) {
-    const classes = useStyles();
-    const [expanded, setExpanded] = React.useState(false);
-
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
-
-    var cardStyle = {
-        marginTop: "15px",
-        marginBottom: "15px",
+export default class PortfolioItem extends Component {
+    constructor(props) {
+        super(props);
     }
 
-    return (
-        <Container style={{ marginTop: "100px" }}><Grid item xs={12}><Card width={1} style={cardStyle} className={classes.root}>
-            <CardHeader
-                /*
-                avatar={
-                    <Avatar aria-label="Avatar" alt="Brett Yeager" src="BrettYeager.png" className={classes.large} >
-          </Avatar>
+    render() {
+        return <Paper elevation={3} className={"PortfolioItem"}>
+                <Typography align={"center"} variant={"h5"}>{this.props.title}</Typography>
+                <Typography align={"center"} variant={"subtitle1"} className={"PortfolioItemSubtitle"}>{this.props.subtitle1}</Typography>
+                {this.props.imgData !== undefined &&
+                    <img src={this.props.imgData.src} alt={this.props.imgData.alt} width={"100%"}/>
                 }
-                */
-                title={props.title}
-                subheader={props.subheader}
-            />
-            {
-                props.image != null && <CardMedia
-                    className={classes.media}
-                    image={props.image}
-                />
-            }
-            <CardContent>
-                <Typography paragraph color="textSecondary" component="p">
-                    {props.imageText}
-                </Typography>
-            </CardContent>
-            <CardActions disableSpacing>
-                
+                {this.props.subtitle2 !== undefined &&
+                    <Typography align={"center"} variant={"subtitle1"} className={"PortfolioItemSubtitle"}>{this.props.subtitle2}</Typography>
+                }
+                {this.props.link1 !== undefined &&
+                <Button variant="contained" color={"primary"} className={"PortfolioItemButton"} target="_blank"
+                        href={this.props.link1.href}>{this.props.link1.text}</Button>
+                }
+                {this.props.link2 !== undefined &&
+                <Button variant="contained" color={"primary"} className={"PortfolioItemButton"} target="_blank"
+                        href={this.props.link2.href}>{this.props.link2.text}</Button>
+                }
+                {this.props.mainText !== undefined && <div>
+                <Typography variant={"h4"} className={"PortfolioItemMainText"}>{this.props.mainText}</Typography>
+                </div>
+                }
+                {this.props.impacts &&
+                    <div>
+                        <hr className={"hr"}/>
+                        <Typography className={"bold"}>Impact:</Typography>
+                        <ul className={"PortfolioItemList"}>{
+                            this.props.impacts.map((text) => {
+                                return <li className={"PortfolioItemListItem"}>{text}</li>
+                            })
+                        }</ul>
+                    </div>
+                }
                 {
-                    (props.link1 != null || props.link2 != null) && < List component="nav">
-                        <ListItem><ListItemText>
-                            {
-                                props.link1 != null && <Button variant="contained" color="primary" target='_blank' href={props.link1} aria-label={props.link1text} className="mr-25 mb-7 mt-7">{props.link1text}</Button>
-                            }
-                            {
-                                props.link2 != null && <Button variant="contained" color="primary" target='_blank' href={props.link2} aria-label={props.link2text} className="mb-7 mt-7">{props.link2text}</Button>
-                            }
-                        </ListItemText></ListItem>
-                    </List>
+                    this.props.quote &&
+                        <div>
+                            <Paper className={"Quote"} elevation={3}><AnimatedText animationSpeed={10} quote={this.props.quote} isQuote={true} /></Paper>
+                        </div>
                 }
-
-                {
-                    !props.noContent && <IconButton
-                    className={clsx(classes.expand, {
-                        [classes.expandOpen]: expanded,
-                    })}
-                    onClick={handleExpandClick}
-                    aria-expanded={expanded}
-                    aria-label="show more"
-                    >
-                    <Fab color="secondary" className={classes.absolute}><ExpandMoreIcon /></Fab>
-                    </IconButton>
+                {this.props.tasks &&
+                <div>
+                    <hr className={"hr"}/>
+                    <Typography className={"bold"}>Task:</Typography>
+                    <ul className={"PortfolioItemList"}>{
+                        this.props.tasks.map((text) => {
+                            return <li className={"PortfolioItemListItem"}>{text}</li>
+                        })
+                    }</ul>
+                </div>
                 }
-            </CardActions>
-            <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
-                    {props.children}
-                </CardContent>
-
-
-
-                
-
-
-
-
-            </Collapse>
-
-        </Card></Grid></Container >
-    );
+                {this.props.solution &&
+                <div>
+                    <hr className={"hr"}/>
+                    <Typography className={"bold"}>Solution:</Typography>
+                    <ul className={"PortfolioItemList"}>{
+                        this.props.solution.map((text) => {
+                            return <li className={"PortfolioItemListItem"}>{text}</li>
+                        })
+                    }</ul>
+                </div>
+                }
+                {this.props.solutionDetails &&
+                <div>
+                    <Typography className={"bold mt-50"}>Solution Details:</Typography>
+                    <ul className={"PortfolioItemList"}>{
+                        this.props.solutionDetails.map((text) => {
+                            return <li className={"PortfolioItemListItem"}>{text}</li>
+                        })
+                    }</ul>
+                </div>
+                }
+                {this.props.delivery &&
+                <div>
+                    <hr className={"hr"}/>
+                    <Typography className={"bold"}>Delivery:</Typography>
+                    <ul className={"PortfolioItemList"}>{
+                        this.props.delivery.map((text) => {
+                            return <li className={"PortfolioItemListItem"}>{text}</li>
+                        })
+                    }</ul>
+                </div>
+                }
+                {this.props.link3 !== undefined &&
+                <Button variant="contained" color={"primary"} className={"PortfolioItemButton"} target="_blank"
+                        href={this.props.link3.href}>{this.props.link3.text}</Button>
+                }
+            </Paper>
+    }
 }
