@@ -160,3 +160,7 @@ body {
 .LinkedInIcon {
   color: white !important;
 }
+.ButtonInfoText{
+  color: #8c8c8c;
+  display: inline;
+}

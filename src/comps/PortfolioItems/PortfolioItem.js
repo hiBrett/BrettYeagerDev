@@ -94,6 +94,10 @@ export default class PortfolioItem extends Component {
                 <Button variant="contained" color={"primary"} className={"PortfolioItemButton"} target="_blank"
                         href={this.props.link3.href}>{this.props.link3.text}</Button>
                 }
+            {
+                this.props.link3 !== undefined && this.props.link3.infoText !== undefined &&
+                    <div className={"ButtonInfoText"}>{this.props.link3.infoText}</div>
+            }
             </Paper>
     }
 }

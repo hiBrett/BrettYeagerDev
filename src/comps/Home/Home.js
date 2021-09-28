@@ -51,9 +51,10 @@ export default class Home extends Component {
                     quote={{name: "Walter Bonetti User Review", text: "It's a new and very interesting way to train the brain with numbers and operations.  The bond system inspired by chemistry makes everything very enjoyable."}}
                 />
                 <PortfolioItem
-                    title={"Testimonial"}
+                    title={"Private Client Testimonial"}
+                    subtitle1={"Project protected by a non-disclosure agreement."}
                     quote={{name: "Private Client", text: "The best part [about] working with Brett was his ability to not only communicate well but understand [the tasks]. \n\nI have been using this platform [Upwork] for a few years and I know a great developer when I see one. Brett's communication is on point - He made the time to be available by messaging and/or phone call if need be. \n\nHis technical abilities are very impressive. And he completed all of my requests in a very reasonable timeframe. I certainly plan on working with him again in the future."}}
-                    link3={{text: "Testimonial Source", href: "https://www.upwork.com/o/profiles/users/~0167d74d7072ca79d7/"}}
+                    link3={{text: "Testimonial Source", href: "https://www.upwork.com/o/profiles/users/~0167d74d7072ca79d7/", infoText: "(Upwork Login Required)"}}
                 />
                 <PortfolioItem
                     title={"BrettYeagerDev.com"}
