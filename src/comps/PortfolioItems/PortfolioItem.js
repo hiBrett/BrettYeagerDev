@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Button, Paper, Typography} from "@material-ui/core";
 import AnimatedText from "../AnimatedText/AnimatedText";
+import PortfolioItemButton from "./PortfolioItemButton";
 
 
 export default class PortfolioItem extends Component {
@@ -19,12 +20,10 @@ export default class PortfolioItem extends Component {
                     <Typography align={"center"} variant={"subtitle1"} className={"PortfolioItemSubtitle"}>{this.props.subtitle2}</Typography>
                 }
                 {this.props.link1 !== undefined &&
-                <Button variant="contained" color={"primary"} className={"PortfolioItemButton"} target="_blank"
-                        href={this.props.link1.href}>{this.props.link1.text}</Button>
+                <PortfolioItemButton info={this.props.link1} />
                 }
                 {this.props.link2 !== undefined &&
-                <Button variant="contained" color={"primary"} className={"PortfolioItemButton"} target="_blank"
-                        href={this.props.link2.href}>{this.props.link2.text}</Button>
+                <PortfolioItemButton info={this.props.link2} />
                 }
                 {this.props.mainText !== undefined && <div>
                 <Typography variant={"h4"} className={"PortfolioItemMainText"}>{this.props.mainText}</Typography>
@@ -91,13 +90,8 @@ export default class PortfolioItem extends Component {
                 </div>
                 }
                 {this.props.link3 !== undefined &&
-                <Button variant="contained" color={"primary"} className={"PortfolioItemButton"} target="_blank"
-                        href={this.props.link3.href}>{this.props.link3.text}</Button>
+                <PortfolioItemButton info={this.props.link3} />
                 }
-            {
-                this.props.link3 !== undefined && this.props.link3.infoText !== undefined &&
-                    <div className={"ButtonInfoText"}>{this.props.link3.infoText}</div>
-            }
             </Paper>
     }
 }
