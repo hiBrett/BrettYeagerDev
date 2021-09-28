@@ -52,7 +52,7 @@ export default class Home extends Component {
                 />
                 <PortfolioItem
                     title={"Testimonial"}
-                    quote={{name: "Private Client", text: "The best part of working with Brett was his ability to not only communicate well but understand exactly what the tasks that were asked of him to do. I have been using this platform [Upwork] for a few years and I know a great developer when I see one. Brett's communication is on point - He made the time to be available by messaging and/or phone call if need be. His technical abilities are very impressive. And he completed all of my requests in a very reasonable timeframe. I certainly plan on working with him again in the future."}}
+                    quote={{name: "Private Client", text: "The best part of working with Brett was his ability to not only communicate well but understand exactly what the tasks that were asked of him to do. \n\nI have been using this platform [Upwork] for a few years and I know a great developer when I see one. Brett's communication is on point - He made the time to be available by messaging and/or phone call if need be. \n\nHis technical abilities are very impressive. And he completed all of my requests in a very reasonable timeframe. I certainly plan on working with him again in the future."}}
                     link3={{text: "Testimonial Source", href: "https://www.upwork.com/o/profiles/users/~0167d74d7072ca79d7/"}}
                 />
                 <PortfolioItem
