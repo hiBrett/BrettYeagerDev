@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Button, Fab, IconButton, Tooltip} from "@material-ui/core";
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 export default class FooterLinkSection extends Component {
     constructor(props) {
@@ -10,21 +11,23 @@ export default class FooterLinkSection extends Component {
 
     render() {
         return  <div className={"FooterLinkSection"}>
-            <Tooltip title="Email" aria-label="Email">
-                <a href="mailto:3.14brett@gmail.com" target="_blank">
-                    <Fab color="primary" className={"EmailButton"}>
-                        <MailOutlineIcon />
-                    </Fab>
-                </a>
-            </Tooltip>
+            <a href="https://github.com/hiBrett?tab=repositories" target="_blank">
+                <Fab className={"GithubButton"}>
+                    <GitHubIcon className="LinkedInIcon" />
+                </Fab>
+            </a>
 
-            <Tooltip title="LinkedIn" aria-label="LinkedIn">
-                <a href="https://www.linkedin.com/in/brett-yeager-developer/" target="_blank">
-                    <Fab className={"LinkedInButton"}>
-                        <LinkedInIcon className="LinkedInIcon" />
-                    </Fab>
-                </a>
-            </Tooltip>
+            <a href="mailto:3.14brett@gmail.com" target="_blank">
+                <Fab color="primary" className={"EmailButton"}>
+                    <MailOutlineIcon />
+                </Fab>
+            </a>
+
+            <a href="https://www.linkedin.com/in/brett-yeager-developer/" target="_blank">
+                <Fab className={"LinkedInButton"}>
+                    <LinkedInIcon className="LinkedInIcon" />
+                </Fab>
+            </a>
         </div>
     }
 }

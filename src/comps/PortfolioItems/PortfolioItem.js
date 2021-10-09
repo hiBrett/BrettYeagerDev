@@ -14,7 +14,7 @@ export default class PortfolioItem extends Component {
                 <Typography align={"center"} variant={"h5"}>{this.props.title}</Typography>
                 <Typography align={"center"} variant={"subtitle1"} className={"PortfolioItemSubtitle"}>{this.props.subtitle1}</Typography>
                 {this.props.imgData !== undefined &&
-                    <img src={this.props.imgData.src} alt={this.props.imgData.alt} width={"100%"}/>
+                    <img className={"PortfolioItemImage"} src={this.props.imgData.src} alt={this.props.imgData.alt} width={"100%"}/>
                 }
                 {this.props.subtitle2 !== undefined &&
                     <Typography align={"center"} variant={"subtitle1"} className={"PortfolioItemSubtitle"}>{this.props.subtitle2}</Typography>

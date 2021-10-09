@@ -62,6 +62,10 @@ body {
 .PortfolioItemMainText{
   margin: 50px 0!important;
 }
+.PortfolioItemImage{
+  max-width: 1920px;
+  max-height: 720px;
+}
 .PortfolioItemList{
   padding: 0;
 }
@@ -156,6 +160,10 @@ body {
 }
 .LinkedInButton {
   background-color: #0e76a8 !important;
+}
+.GithubButton {
+  background-color: #2c2c2c !important;
+  margin-right: 20px !important;
 }
 .LinkedInIcon {
   color: white !important;
